@@ -62,6 +62,7 @@ export class GridsterDraggable {
 
   destroy(): void {
     if (this.gridster.previewStyle) {
+      this.gridster.movingItem = null;
       this.gridster.previewStyle(true);
     }
     // @ts-ignore
