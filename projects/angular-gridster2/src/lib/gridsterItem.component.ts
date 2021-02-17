@@ -89,10 +89,7 @@ export class GridsterItemComponent implements OnInit, OnDestroy, OnChanges, Grid
       maxItemArea: undefined,
       minItemArea: undefined,
     });
-
-    if(this.$item.x !== -1 || this.$item.y !== -1) {
-      this.setSize();
-    }
+    this.setSize();
   }
 
   ngOnDestroy(): void {

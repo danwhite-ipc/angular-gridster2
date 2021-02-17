@@ -85,7 +85,7 @@ export class TrackByComponent implements OnInit {
   }
 
   addItem(): void {
-    this.dashboard.push({x: -1, y: -1, cols: 1, rows: 1, id: this.dashboard.length});
+    this.dashboard.push({x: 0, y: 0, cols: 1, rows: 1, id: this.dashboard.length});
   }
 
   removeItem($event: MouseEvent | TouchEvent, item): void {
